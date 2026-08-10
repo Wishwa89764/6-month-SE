@@ -19,3 +19,5 @@ I am documenting my journey from 0 to Software Engineer in 6 months.
 
 ---
 Daily updates. No zero days.
+
+### My version
