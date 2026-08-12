@@ -1,16 +1,19 @@
 let tip;
-const billAmountInput = document.getElementById("bill_amount");
+const billInput = document.getElementById("bill_amount");
+const tipResult = document.getElementById("tip_result");
+const totalResult = document.getElementById("total_result");
 
 billAmountInput.focus();
-function clear(){
-    billAmountInput.value=Number("");
-}
-function tipCal(precentage){
-    let billAmount = Number(billAmountInput.value);
-    let total;
-    tip=(Number(billAmountInput.value)*precentage)/100;
-    console.log(tip);
-    clear();
-    total= Number(tip+billAmount);
-    billAmountInput.value= total;
+
+function tipCal(percentage){
+    let bill = parseFloat(billInput.value);
+    if(!bill || bill <= 0){
+        alert("Enter a valid bill amount!");
+        return;
+    }
+    let tip = (bill * percentage) / 100;
+    let total = bill + tip;
+    
+    tipResult.textContent = tip.toFixed(2);
+    totalResult.textContent = total.toFixed(2);
 }
