@@ -1,0 +1,43 @@
+.center{
+    margin: auto;
+}
+
+input{
+    width: 400px;
+    height: auto;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: end;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.box{
+    width: 450px;
+    height: auto;
+    border: 4px solid black;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.m-t-30{
+    margin-top: 30px;
+}
+
+.btn-light-blue{
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    border: 2px solid rgb(210, 212, 212);
+    border-radius: 8px;
+}
+
+.p4{
+    padding: 10px;
+}
+
+.m-10{
+    margin: 10px;
+}
