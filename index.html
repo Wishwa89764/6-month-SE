@@ -3,50 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wishwa | SE Journey</title>
+  <title>Wishwa Aloka | SE Journey</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white">
 
-  <!-- HERO - You already built this -->
-  <section class="min-h-screen flex items-center justify-center text-center p-10">
+  <!-- HERO -->
+  <section class="min-h- flex items-center justify-center text-center p-10">
     <div>
-      <p class="text-cyan-400 text-sm tracking-[0.3em] uppercase mb-4">Colombo, LK • Started Aug 10, 2026</p>
-      <h1 class="text-6xl font-black mb-4">Wishwa Aloka</h1>
+      <p class="text-cyan-400 text-xs tracking-[0.3em] uppercase mb-4">Colombo, LK • Started Aug 10, 2026</p>
+      <h1 class="text-6xl md:text-7xl font-black mb-3">Wishwa Aloka</h1>
       <h2 class="text-2xl text-gray-400 mb-6">Aspiring Software Engineer</h2>
-      <p class="text-gray-300 max-w-xl mx-auto mb-8">Documenting my journey from 0 to Software Engineer in 6 months. Goal: Hired by Feb 2027.</p>
-      <div class="flex gap-4 justify-center">
-        <a href="https://github.com/Wishwa89764" class="bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200">GitHub</a>
-        <a href="#projects" class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black">View Projects</a>
+      <p class="text-gray-300 max-w-xl mx-auto mb-8">Documenting my journey from 0 to SE in 6 months. Goal: Hired by Feb 2027. Building in public.</p>
+      <div class="flex gap-3 justify-center flex-wrap">
+        <a href="https://github.com/Wishwa89764" class="bg-white text-black px-6 py-3 rounded-full font-bold text-sm">GitHub</a>
+        <a href="#projects" class="border border-white/20 px-6 py-3 rounded-full text-sm hover:bg-white hover:text-black transition">View Projects ↓</a>
       </div>
     </div>
   </section>
 
-  <!-- NEW: PROJECTS -->
-  <section id="projects" class="p-10 max-w-5xl mx-auto">
-    <h3 class="text-3xl font-bold mb-10">Projects</h3>
-    
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- Day 1 -->
-      <a href="./day-1/" class="border border-gray-800 p-6 rounded-2xl hover:border-cyan-400 transition">
+  <!-- TECH STACK -->
+  <section class="max-w-5xl mx-auto px-10 py-10">
+    <h3 class="text-sm tracking-widest text-gray-500 uppercase mb-6">Tech Stack</h3>
+    <div class="flex flex-wrap gap-2">
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm">HTML</span>
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm">CSS</span>
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm bg-white text-black">JavaScript</span>
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm">Tailwind</span>
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm">Git</span>
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm">GitHub</span>
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm text-gray-500">React (soon)</span>
+      <span class="border border-gray-800 px-3 py-1 rounded-full text-sm text-gray-500">Node.js (soon)</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS - YOUR CURRENT -->
+  <section id="projects" class="max-w-5xl mx-auto px-10 py-10">
+    <h3 class="text-3xl font-bold mb-8">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-5">
+      <a href="./day-1/" class="border border-gray-800 p-6 rounded-2xl hover:border-cyan-400/50 transition group">
         <p class="text-cyan-400 text-xs uppercase tracking-widest mb-2">Day 1 • Aug 10</p>
-        <h4 class="text-xl font-bold mb-2">First HTML/JS</h4>
+        <h4 class="text-xl font-bold mb-2 group-hover:text-cyan-400">First HTML/JS</h4>
         <p class="text-gray-400 text-sm">Setup env, first HTML/JS, pushed to GitHub. The beginning.</p>
         <p class="text-white mt-4 text-sm">View →</p>
       </a>
-
-      <!-- Day 2 -->
-      <a href="./day-2-tip-calculator/" class="border border-gray-800 p-6 rounded-2xl hover:border-cyan-400 transition bg-zinc-900">
+      <a href="./day-2-tip-calculator/" class="border border-gray-800 p-6 rounded-2xl hover:border-cyan-400/50 transition bg-zinc-900/50 group">
         <p class="text-cyan-400 text-xs uppercase tracking-widest mb-2">Day 2 • Aug 11</p>
-        <h4 class="text-xl font-bold mb-2">Tip Calculator</h4>
-        <p class="text-gray-400 text-sm">JS fundamentals, DOM manipulation, math logic. Live & functional.</p>
+        <h4 class="text-xl font-bold mb-2 group-hover:text-cyan-400">Tip Calculator</h4>
+        <p class="text-gray-400 text-sm">JS fundamentals, DOM, math logic. Live & functional.</p>
         <p class="text-white mt-4 text-sm">View Live →</p>
       </a>
     </div>
   </section>
 
-  <footer class="text-center text-gray-600 text-sm p-10 border-t border-gray-900 mt-20">
-    Built by Wishwa Aloka • 6-month SE Journey
+  <!-- PROGRESS -->
+  <section class="max-w-5xl mx-auto px-10 py-10">
+    <h3 class="text-sm tracking-widest text-gray-500 uppercase mb-6">Progress Log</h3>
+    <div class="border-l border-gray-800 pl-6 space-y-6 text-sm">
+      <div><span class="text-cyan-400">Day 1</span> <span class="text-gray-500">(Aug 10)</span> - Setup env, first HTML/JS, GitHub</div>
+      <div><span class="text-cyan-400">Day 2</span> <span class="text-gray-500">(Aug 11)</span> - JS fundamentals + Tip Calculator + Deploy</div>
+      <div class="text-gray-500"><span>Day 3</span> (Today) - Portfolio v1 LIVE at 5 AM 🔥</div>
+      <div class="text-gray-600">Day 30: MERN CRUD App • Day 180: Hired</div>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-600 text-xs p-12 border-t border-gray-900 mt-16">
+    Built at 5:06 AM by Wishwa Aloka • <a href="https://github.com/Wishwa89764/6-month-SE" class="underline">Source Code</a> • Colombo, LK
   </footer>
 
 </body>
